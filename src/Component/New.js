@@ -12,6 +12,7 @@ import Typography from "@material-ui/core/Typography";
 const New = props => {
   const useStyles = makeStyles({
     card: {
+      margin: "10px",
       maxWidth: 345
     },
     media: {
@@ -25,7 +26,7 @@ const New = props => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={props.el.urlToImage}
           title="Contemplative Reptile"
         />
         <CardContent>
