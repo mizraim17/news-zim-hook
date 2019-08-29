@@ -12,11 +12,12 @@ import Typography from "@material-ui/core/Typography";
 const New = props => {
   const useStyles = makeStyles({
     card: {
-      margin: "10px",
-      maxWidth: 345
+      margin: 10,
+      maxWidth: 450,
+      boxSizing: "border-box"
     },
     media: {
-      height: 140
+      height: 240
     }
   });
 

@@ -1,7 +1,9 @@
 import React from "react";
-import "./App.css";
 import New from "./Component/New";
 import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import "./App.css";
+import Header from "./Component/Header/Header";
 
 function App() {
   const [news, setNews] = React.useState();
@@ -12,7 +14,7 @@ function App() {
 
     newsapi.v2
       .everything({
-        q: "apple",
+        q: "xiaomi",
         page: 2
       })
       .then(response => {
@@ -23,15 +25,16 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>landingPage news </h1>
-      <div>
+    <div className=" ">
+      <Header />
+
+      <Grid container spacing={3} justify="space-around">
         {news
           ? news.map((el, i) => {
               return <New el={el} key={i} />;
             })
           : "no"}
-      </div>
+      </Grid>
 
       <Button color="primary" variant="contained">
         button
