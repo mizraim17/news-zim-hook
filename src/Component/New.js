@@ -26,6 +26,7 @@ const New = props => {
         <CardMedia
           className={classes.media}
           image="/static/images/cards/contemplative-reptile.jpg"
+          x
           title="Contemplative Reptile"
         />
         <CardContent>
