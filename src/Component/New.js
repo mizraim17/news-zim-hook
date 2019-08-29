@@ -9,7 +9,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
-const New = ({ props }) => {
+const New = props => {
   const useStyles = makeStyles({
     card: {
       maxWidth: 345
@@ -30,11 +30,11 @@ const New = ({ props }) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.title}
+            {props.el.title}
+            {console.log("props", props)}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {props.el.content}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -20,7 +20,6 @@ function App() {
 
         setNews(response.articles);
       });
-    console.log("news+++++++++", news);
   }, []);
 
   return (
@@ -29,11 +28,11 @@ function App() {
       <div>
         {news
           ? news.map((el, i) => {
-              return <New note={el} />;
+              return <New el={el} key={i} />;
             })
           : "no"}
       </div>
-      <New note />
+
       <Button color="primary" variant="contained">
         button
       </Button>
