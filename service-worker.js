@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/news-zim-hook/precache-manifest.8f44c9591b7c523ec7a8e5b6b15552c9.js"
+  "/news-zim-hook/precache-manifest.6dfaf6e2dca3d1386c16bc741e305153.js"
 );
 
 self.addEventListener('message', (event) => {

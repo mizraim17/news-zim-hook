@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "43401b723f8031e7fdffd14ed69cc7ba",
+    "revision": "cb5f770ba2ad62d46d10e3e9a081fbb2",
     "url": "/news-zim-hook/index.html"
   },
   {
