@@ -1,18 +1,24 @@
 {
   "name": "news-zim-hook",
   "version": "0.1.0",
+  "homepage": "https://mizraim17.github.io/news-zim-hook",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.3.3",
+    "gh-pages": "^2.1.1",
     "newsapi": "^2.4.0",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-materialize": "^3.3.4",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

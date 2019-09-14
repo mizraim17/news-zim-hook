@@ -1,0 +1,13 @@
+.Header {
+  padding: 20px;
+
+  .Header--items {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    background-color: #00838f;
+    color: white;
+  }
+}

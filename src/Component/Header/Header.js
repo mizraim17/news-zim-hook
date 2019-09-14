@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Header.css";
+import "./Header.scss";
 import Icon from "@material-ui/core/Icon";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
@@ -16,38 +16,50 @@ const useStyles = makeStyles(theme => ({
   leftIcon: {
     marginRight: theme.spacing(1)
   },
-  center: {
+  title: {
+    color: "white",
     textAlign: "center"
   }
 }));
 
-const Header = () => {
+const themes = [
+  { keyword: "mexico", logo: "public" },
+  { keyword: "tech", logo: "computer" },
+  { keyword: "DF", logo: "map" },
+  { keyword: "Byker", logo: "motorcycle" },
+  { keyword: "JS", logo: "code" },
+  { keyword: "UAEH", logo: "school" },
+  { keyword: "pachuca", logo: "flag" }
+];
+
+const Header = props => {
+  console.log("====>", props.onclick);
   const classes = useStyles();
 
   return (
     <div className="Header">
       <Typography
-        className={classes.center}
+        className={classes.title}
         variant="h3"
         component="h2"
         gutterBottom
       >
-        New zim
+        Daily News
       </Typography>
 
       <div className="Header--items">
-        <Button variant="contained" color="primary" className={classes.button}>
-          <Icon className={classes.leftIcon}>send</Icon>
-          send
-        </Button>
-        <Button variant="contained" color="primary" className={classes.button}>
-          <Icon className={classes.leftIcon}>send</Icon>
-          send
-        </Button>
-        <Button variant="contained" color="primary" className={classes.button}>
-          <Icon className={classes.leftIcon}>send</Icon>
-          send
-        </Button>
+        {themes.map((el, i) => (
+          <Button
+            key={i}
+            variant="contained"
+            color="#333"
+            onClick={() => props.find(el.keyword)}
+            className={classes.button}
+          >
+            <Icon className={classes.leftIcon}>{el.logo}</Icon>
+            {el.keyword}
+          </Button>
+        ))}
       </div>
     </div>
   );
