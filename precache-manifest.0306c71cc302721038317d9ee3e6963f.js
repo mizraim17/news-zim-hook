@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "90b7cda8c8fe6091eb2c3342123acd2f",
+    "revision": "4d3813b6f5bb3fe11a280d617dbcdd22",
     "url": "/news-zim-hook/index.html"
   },
   {
-    "revision": "4dad58e01523f64c8c25",
-    "url": "/news-zim-hook/static/css/main.61c42936.chunk.css"
+    "revision": "736c4784f0b200e1ea08",
+    "url": "/news-zim-hook/static/css/main.b2591bf2.chunk.css"
   },
   {
     "revision": "dd891d8879b3f0264101",
     "url": "/news-zim-hook/static/js/2.0b8890c3.chunk.js"
   },
   {
-    "revision": "4dad58e01523f64c8c25",
-    "url": "/news-zim-hook/static/js/main.560fa362.chunk.js"
+    "revision": "736c4784f0b200e1ea08",
+    "url": "/news-zim-hook/static/js/main.ed4bf869.chunk.js"
   },
   {
     "revision": "b77cbe93da445117d502",
