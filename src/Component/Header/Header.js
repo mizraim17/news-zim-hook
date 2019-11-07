@@ -143,18 +143,20 @@ const Header = props => {
 			</Grid>
 
 			<div className="Header--items">
-				{themes.map((el, i) => (
-					<Button
-						key={i}
-						variant="contained"
-						color="primary"
-						onClick={() => props.find(el.keyword)}
-						className={classes.button}
-					>
-						<Icon className={classes.leftIcon}>{el.logo}</Icon>
-						{el.keyword}
-					</Button>
-				))}
+				<Grid xs={4} sm={12} xl={12} className="centrar">
+					{themes.map((el, i) => (
+						<Button
+							key={i}
+							variant="contained"
+							color="primary"
+							onClick={() => props.query(el.keyword)}
+							className={classes.button}
+						>
+							<Icon className={classes.leftIcon}>{el.logo}</Icon>
+							{el.keyword}
+						</Button>
+					))}{" "}
+				</Grid>
 			</div>
 		</div>
 	);
