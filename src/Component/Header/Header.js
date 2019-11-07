@@ -72,11 +72,12 @@ const useStyles = makeStyles(theme => ({
 const themes = [
 	{ keyword: "mexico", logo: "public" },
 	{ keyword: "tech", logo: "computer" },
-	{ keyword: "DF", logo: "map" },
+	{ keyword: "CDMX", logo: "map" },
 	{ keyword: "Byker", logo: "motorcycle" },
 	{ keyword: "JS", logo: "code" },
 	{ keyword: "UAEH", logo: "school" },
-	{ keyword: "pachuca", logo: "flag" }
+	{ keyword: "pachuca", logo: "flag" },
+	{ keyword: "anime", logo: "chrome_reader_mode" }
 ];
 
 const Header = props => {
