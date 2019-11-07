@@ -1,3 +1,6 @@
+###deploy in github pages
+https://mizraim17.github.io/news-zim-hook/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
