@@ -24,7 +24,7 @@ const New = props => {
 
 	const classes = useStyles();
 	return (
-		<a href={props.el.url} target="_blank">
+		<a href={props.el.url} target="_blank" rel="noopener noreferrer">
 			<Card className={classes.card}>
 				<CardActionArea>
 					<CardMedia

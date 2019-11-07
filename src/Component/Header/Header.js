@@ -113,8 +113,8 @@ const Header = props => {
 			</Typography>
 
 			<Grid container spacing={3}>
-				<Grid item xs={4}></Grid>
-				<Grid item xs={4}>
+				<Grid item xs={12} xl={4}></Grid>
+				<Grid item xs={12} xl={4}>
 					<div className={classes.search}>
 						<div className={classes.searchIcon}>
 							<SearchIcon />
@@ -139,7 +139,7 @@ const Header = props => {
 						</Button>
 					</div>
 				</Grid>
-				<Grid item xs={4}></Grid>
+				<Grid item xs={12} xl={4}></Grid>
 			</Grid>
 
 			<div className="Header--items">
