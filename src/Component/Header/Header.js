@@ -74,7 +74,7 @@ const themes = [
 	{ keyword: "tech", logo: "computer" },
 	{ keyword: "CDMX", logo: "map" },
 	{ keyword: "Byker", logo: "motorcycle" },
-	{ keyword: "JS", logo: "code" },
+	{ keyword: "Javascript", logo: "code" },
 	{ keyword: "UAEH", logo: "school" },
 	{ keyword: "pachuca", logo: "flag" },
 	{ keyword: "anime", logo: "chrome_reader_mode" }
