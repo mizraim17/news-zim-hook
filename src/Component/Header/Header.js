@@ -144,8 +144,8 @@ const Header = props => {
 
 			<div className="Header--items">
 				<Grid container spacing={3}>
-					<Grid xs={12} sm={12} xl={12} className="centrar">
-						{themes.map((el, i) => (
+					{themes.map((el, i) => (
+						<Grid xs={6} sm={12} xl={2} className="centrar">
 							<Button
 								key={i}
 								variant="contained"
@@ -156,8 +156,8 @@ const Header = props => {
 								<Icon className={classes.leftIcon}>{el.logo}</Icon>
 								{el.keyword}
 							</Button>
-						))}
-					</Grid>
+						</Grid>
+					))}
 				</Grid>
 			</div>
 		</div>
