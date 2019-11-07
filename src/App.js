@@ -7,13 +7,15 @@ import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 import { makeStyles } from "@material-ui/core/styles";
 
+require("dotenv").config();
+
 function App() {
 	const [news, setNews] = React.useState();
 	const [progress, setprogress] = React.useState(true);
 
 	const query = word => {
 		const NewsAPI = require("newsapi");
-		const newsapi = new NewsAPI("4891f314d6264426978f471d75136fd1");
+		const newsapi = new NewsAPI(process.env.REACT_APP_KEY_NEWS);
 
 		newsapi.v2
 			.everything({
@@ -32,7 +34,7 @@ function App() {
 
 	React.useEffect(() => {
 		const NewsAPI = require("newsapi");
-		const newsapi = new NewsAPI("4891f314d6264426978f471d75136fd1");
+		const newsapi = new NewsAPI(process.env.REACT_APP_KEY_NEWS);
 
 		newsapi.v2
 			.everything({
@@ -56,6 +58,8 @@ function App() {
 	}));
 
 	const classes = useStyles();
+	console.log("--->", process.env.REACT_APP_KEY);
+	console.log("process.env.KEY_NEWS--->", process.env.REACT_APP_KEY_NEWS);
 
 	return (
 		<div className=" ">

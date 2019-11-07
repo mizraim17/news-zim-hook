@@ -146,7 +146,16 @@ const Header = props => {
 			<div className="Header--items">
 				<Grid container spacing={3}>
 					{themes.map((el, i) => (
-						<Grid xs={6} lg={2} className="centrar">
+						<Grid
+							item
+							xs={6}
+							sm={6}
+							md={2}
+							lg={2}
+							xl={2}
+							key={i}
+							className="centrar"
+						>
 							<Button
 								key={i}
 								variant="contained"
