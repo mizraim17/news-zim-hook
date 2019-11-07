@@ -114,8 +114,8 @@ const Header = props => {
 			</Typography>
 
 			<Grid container spacing={3}>
-				<Grid item xs={12} xl={4}></Grid>
-				<Grid item xs={12} xl={4}>
+				<Grid item xs={12} lg={4}></Grid>
+				<Grid item xs={12} lg={4}>
 					<div className={classes.search}>
 						<div className={classes.searchIcon}>
 							<SearchIcon />
@@ -140,13 +140,13 @@ const Header = props => {
 						</Button>
 					</div>
 				</Grid>
-				<Grid item xs={12} xl={4}></Grid>
+				<Grid item xs={12} lg={4}></Grid>
 			</Grid>
 
 			<div className="Header--items">
 				<Grid container spacing={3}>
 					{themes.map((el, i) => (
-						<Grid xs={6} sm={12} xl={2} className="centrar">
+						<Grid xs={6} lg={2} className="centrar">
 							<Button
 								key={i}
 								variant="contained"
