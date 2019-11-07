@@ -22,6 +22,9 @@ function App() {
 
 				setNews(response.articles);
 			});
+
+		let clean = document.getElementById("searchbar");
+		clean.value = " ";
 	};
 
 	React.useEffect(() => {

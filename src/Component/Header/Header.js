@@ -81,7 +81,7 @@ const themes = [
 
 const Header = props => {
 	const teclea = e => {
-		if (e.charCode == 13) {
+		if (e.charCode === 13) {
 			props.query(word);
 		}
 	};
@@ -120,6 +120,7 @@ const Header = props => {
 							<SearchIcon />
 						</div>
 						<InputBase
+							id="searchbar"
 							onKeyPress={teclea}
 							onChange={search}
 							placeholder="Search…"
