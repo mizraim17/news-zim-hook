@@ -109,7 +109,7 @@ const Header = props => {
 				component="h2"
 				gutterBottom
 			>
-				Daily News ZIM
+				Daily News MZM
 			</Typography>
 
 			<Grid container spacing={3}>
@@ -143,19 +143,21 @@ const Header = props => {
 			</Grid>
 
 			<div className="Header--items">
-				<Grid xs={4} sm={12} xl={12} className="centrar">
-					{themes.map((el, i) => (
-						<Button
-							key={i}
-							variant="contained"
-							color="primary"
-							onClick={() => props.query(el.keyword)}
-							className={classes.button}
-						>
-							<Icon className={classes.leftIcon}>{el.logo}</Icon>
-							{el.keyword}
-						</Button>
-					))}{" "}
+				<Grid container spacing={3}>
+					<Grid xs={12} sm={12} xl={12} className="centrar">
+						{themes.map((el, i) => (
+							<Button
+								key={i}
+								variant="contained"
+								color="primary"
+								onClick={() => props.query(el.keyword)}
+								className={classes.button}
+							>
+								<Icon className={classes.leftIcon}>{el.logo}</Icon>
+								{el.keyword}
+							</Button>
+						))}
+					</Grid>
 				</Grid>
 			</div>
 		</div>
