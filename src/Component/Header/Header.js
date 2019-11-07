@@ -88,12 +88,6 @@ const Header = props => {
 	};
 
 	const search = e => {
-		if (e.key === "Enter") {
-			console.log("do validate");
-		}
-
-		console.log("enter", e);
-
 		setword(e.target.value);
 	};
 
