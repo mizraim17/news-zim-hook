@@ -58,8 +58,6 @@ function App() {
 	}));
 
 	const classes = useStyles();
-	console.log("--->", process.env.REACT_APP_KEY);
-	console.log("process.env.KEY_NEWS--->", process.env.REACT_APP_KEY_NEWS);
 
 	return (
 		<div className=" ">

@@ -97,7 +97,7 @@ const Header = props => {
 
 	return (
 		<div className="Header">
-			{console.log("props", props)}
+			{/* {console.log("props", props)} */}
 			<Typography
 				className={classes.title}
 				variant="h3"
