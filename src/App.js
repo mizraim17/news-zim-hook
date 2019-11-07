@@ -1,12 +1,15 @@
 import React from "react";
 import New from "./Component/News/New";
 import Grid from "@material-ui/core/Grid";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import "./App.css";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
+import { makeStyles } from "@material-ui/core/styles";
 
 function App() {
 	const [news, setNews] = React.useState();
+	const [progress, setprogress] = React.useState(true);
 
 	const query = word => {
 		const NewsAPI = require("newsapi");
@@ -38,22 +41,39 @@ function App() {
 			})
 			.then(response => {
 				// console.log(response.articles);
-
+				setprogress(false);
 				setNews(response.articles);
 			});
 	}, []);
+
+	const useStyles = makeStyles(theme => ({
+		root: {
+			display: "flex",
+			justifyContent: "center",
+			primary: "red",
+			width: "300"
+		}
+	}));
+
+	const classes = useStyles();
 
 	return (
 		<div className=" ">
 			<Header {...{ query }} />
 
-			<Grid container spacing={3} justify="space-around">
-				{news
-					? news.map((el, i) => {
-							return <New el={el} key={i} />;
-					  })
-					: "no"}
-			</Grid>
+			{progress !== false ? (
+				<div className={classes.root}>
+					<CircularProgress color="secondary" size={250} />
+				</div>
+			) : (
+				<Grid container spacing={3} justify="space-around">
+					{news
+						? news.map((el, i) => {
+								return <New el={el} key={i} />;
+						  })
+						: "no"}
+				</Grid>
+			)}
 
 			<Footer />
 		</div>
