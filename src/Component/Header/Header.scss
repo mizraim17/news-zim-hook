@@ -1,9 +1,10 @@
 .Header {
   padding: 20px;
 
-  .Header--items {
+  &__items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   button {

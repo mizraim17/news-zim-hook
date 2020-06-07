@@ -47,7 +47,7 @@ const Header = props => {
         Daily News
       </Typography>
 
-      <div className="Header--items">
+      <div className="Header__items">
         {themes.map((el, i) => (
           <Button
             key={i}
