@@ -1,14 +1,22 @@
 .Header {
-  padding: 20px;
+	padding: 20px;
 
-  &__items {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+	.Header--items {
+		display: flex;
+		justify-content: center;
+		margin-top: 2%;
 
-  button {
-    background-color: #00838f;
-    color: white;
-  }
+		.centrar {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.su {
+		background-color: green;
+	}
+
+	button {
+		background-color: #00838f;
+		color: white;
+	}
 }
