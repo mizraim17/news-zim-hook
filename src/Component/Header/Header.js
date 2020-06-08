@@ -104,7 +104,7 @@ const Header = (props) => {
 				component="h2"
 				gutterBottom
 			>
-				Daily News MZM
+				Daily News ZIM
 			</Typography>
 
 			<Grid container spacing={3}>
